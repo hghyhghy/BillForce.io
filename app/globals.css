@@ -1,0 +1,80 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+/* 
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+} */
+/* styles/globals.css */
+.link-animation {
+  position: relative;
+  text-decoration: none;
+  color: black; /* or any color you prefer */
+}
+
+.link-animation::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px; /* Adjust based on font size */
+  width: 0;
+  height: 2px; /* Adjust based on your design */
+  background-color: blue;
+  transition: width 0.3s ease;
+}
+
+.link-animation:hover::before {
+  width: 100%;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.slick-slide > div{
+
+  margin: 0 10px;
+} 
+
+/* Add this CSS to your stylesheet or in a CSS-in-JS solution */
+
+.slider-container {
+  width: 100%;
+  max-width: 100vw; /* Ensure it does not exceed viewport width */
+  margin: 0 auto; /* Center the slider */
+  background-color: #f0f0f0; /* Set a decent background color */
+  padding: 20px; /* Add padding if needed */
+  box-sizing: border-box; /* Include padding and border in element's total width and height */
+}
+
+.slick-slide h3 {
+  text-align: center; /* Center text in slides */
+  line-height: 100px; /* Center text vertically (adjust as needed) */
+}
