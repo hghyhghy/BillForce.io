@@ -47,7 +47,7 @@ const page = () => {
       <Dollar plan={"Monthly"} price={49} member={2} storage={20} integration={"Integration help"}/>
       <Dollar plan={"Quaterly"} price={80} member={4} storage={30} integration={"Integration + help"}/>
       <Dollar plan={"Annually"}price={120} member={6} storage={60} integration={"Integration ++ help"}/>
-+
+
     </div>
 
     <div className=' mt-8'>
